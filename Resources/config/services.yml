@@ -1,4 +1,12 @@
 services:
-#    xtain_filter_query_builder.example:
-#        class: XTAIN\Bundle\FilterQueryBuilderBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    xtain_filter_query_builder.builder_factory:
+        class: XTAIN\FilterQueryBuilder\BuilderFactory
+        arguments:
+            -
+               - XTAIN\FilterQueryBuilder\Expr\BetweenExpression
+               - XTAIN\FilterQueryBuilder\Expr\EqualExpression
+               - XTAIN\FilterQueryBuilder\Expr\LessGreaterExpression
+               - XTAIN\FilterQueryBuilder\Expr\NullExpression
+            -
+               - XTAIN\FilterQueryBuilder\Expr\AndxConjunction
+               - XTAIN\FilterQueryBuilder\Expr\OrxConjunction

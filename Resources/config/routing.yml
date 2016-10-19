@@ -1,3 +1,0 @@
-xtain_filter_query_builder_homepage:
-    path:     /
-    defaults: { _controller: XTAINFilterQueryBuilderBundle:Default:index }

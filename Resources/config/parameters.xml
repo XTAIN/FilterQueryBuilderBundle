@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="xtain_filter_query_builder.models.serializer_config_path" type="constant">XTAIN_FILTER_QUERY_BUILDER_SERIALIZER_CONFIG_PATH</parameter>
+        <parameter key="xtain_filter_query_builder.models.serializer_namespace_prefix" type="constant">XTAIN_FILTER_QUERY_BUILDER_SERIALIZER_NAMESPACE_PREFIX</parameter>
+    </parameters>
+</container>

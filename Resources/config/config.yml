@@ -1,0 +1,9 @@
+imports:
+    - { resource: parameters.xml }
+
+jms_serializer:
+    metadata:
+        directories:
+            XTAINFilterQueryBuilderBundle:
+                path: "%xtain_filter_query_builder.models.serializer_config_path%"
+                namespace_prefix: "%xtain_filter_query_builder.models.serializer_namespace_prefix%"
