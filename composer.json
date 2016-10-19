@@ -1,0 +1,34 @@
+{
+  "name": "xtain/filter-query-builder-bundle",
+  "type": "symfony-bundle",
+  "description": "Contains glue code for filter-query-builder",
+  "authors": [
+    {
+      "name": "Maximilian Ruta",
+      "email": "mr@xtain.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "symfony/symfony": "~2.8",
+    "xtain/filter-query-builder": "*"
+  },
+  "suggest": {
+    "symfony/phpunit-bridge": "",
+    "phpunit/phpunit": ""
+  },
+  "autoload": {
+    "psr-4": {
+      "XTAIN\\Bundle\\FilterQueryBuilderBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
