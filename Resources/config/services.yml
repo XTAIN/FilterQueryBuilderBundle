@@ -1,12 +1,12 @@
 services:
+    xtain_filter_query_builder.expression.default_expression_factory:
+        class: XTAIN\FilterQueryBuilder\Expr\DefaultExpressionFactory
+
+    xtain_filter_query_builder.expression.default_conjunction_factory:
+        class: XTAIN\FilterQueryBuilder\Expr\DefaultConjunctionFactory
+
     xtain_filter_query_builder.builder_factory:
         class: XTAIN\FilterQueryBuilder\BuilderFactory
         arguments:
-            -
-               - XTAIN\FilterQueryBuilder\Expr\BetweenExpression
-               - XTAIN\FilterQueryBuilder\Expr\EqualExpression
-               - XTAIN\FilterQueryBuilder\Expr\LessGreaterExpression
-               - XTAIN\FilterQueryBuilder\Expr\NullExpression
-            -
-               - XTAIN\FilterQueryBuilder\Expr\AndxConjunction
-               - XTAIN\FilterQueryBuilder\Expr\OrxConjunction
+            - [ "@xtain_filter_query_builder.expression.default_expression_factory" ]
+            - [ "@xtain_filter_query_builder.expression.default_conjunction_factory" ]
