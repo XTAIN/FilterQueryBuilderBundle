@@ -11,7 +11,7 @@
   "require": {
     "php": ">=5.3.3",
     "symfony/symfony": "~2.8",
-    "xtain/filter-query-builder": "*"
+    "xtain/filter-query-builder": "~0.9|~1.0"
   },
   "suggest": {
     "symfony/phpunit-bridge": "",
