@@ -1,6 +1,7 @@
 {
   "name": "xtain/filter-query-builder-bundle",
   "type": "symfony-bundle",
+  "license": "MIT",
   "description": "Contains glue code for filter-query-builder",
   "authors": [
     {
